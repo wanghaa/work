@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>瑞草生物科技（用户登录｝</title>
+  <link href="css1.css" rel="stylesheet" type="text/css" />
+
+  <script language="javascript" src="js/nifty.js"></script>
+<script type="text/javascript">
+  	function check()
+  	{
+  		if(document.forms[0].user_name.value=="")
+  		{
+  			alert("请填写用户名");
+  			document.forms[0].user_name.focus();
+  			return;
+  		}
+  		
+  		if(document.forms[0].user_pass.value=="")
+  		{
+  			alert("请填写密码");
+  			document.forms[0].user_pass.focus();
+  			return;
+  		}
+  		document.logo_in.submit();
+  	}
+  	function test(){
+  		if (event.keyCode == 13){
+  			check();
+  		}
+  	}
+  </script>
+
+  </head>
+  
+  <body>
+<div id="out"></div>
+
+	<div id="container">
+	   	<p class="titleP"><span>您好，欢迎来到瑞草生物科技！</span>请登录免费注册<span style="margin-left:20px"><a style="color: #929292;font-weight:100;text-decoration:none;" href="admin.html">[管理员登陆]</a></span></p>
+	<div id="banner"><img src="images/banner_f_03.gif" /></div>
+	<div id="content">
+	<form name="logo_in" method="post" action="LoginServlet" class="form1">
+		<table class="tab" cellspacing="6">
+			<tr>
+				<td><img src="images/user_f_07.gif" /></td>
+				<td><input onkeydown="test();" type="text" id="user_name" name="user_name"  />&nbsp;&nbsp;&nbsp;&nbsp;（请输入您的名称）</td>
+			</tr>
+		<tr>
+			<td><img src="images/pass_f_10.gif" /></td>
+			<td><input onkeydown="test();" type="password" id="user_pass" name="user_pass" />&nbsp;&nbsp;&nbsp;&nbsp;（请输入密码）</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input  type="button" id="submit1" value="" class="logoin"  onclick="check()"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" name="submit2" value="" class="register" onclick="location='register.html'" />
+			</td>
+		</tr>
+		</table>
+		</form>
+	</div>
+	<div id="footer">Copyright © 2003-2011 Taobao.com 版权所有</div>
+	</div>
+  </body>
+</html>

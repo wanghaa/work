@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dwr>
+  <allow>
+	<create creator="new" javascript="utildwr">
+      <param name="class" value="com.work.oper.UtilDWR"/>
+    </create>
+	<convert converter="bean" match="com.work.model.Empolyess"/>
+	<convert converter="bean" match="com.work.model.Diary"/>
+
+  </allow>
+</dwr>

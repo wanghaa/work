@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{margin:0px auto;
+           padding:0px;
+		   background-color:#fcfcfc;
+		   font-family:Arial, Helvetica, sans-serif;
+		   font-size:12px;
+		   text-align:center;
+		   background:url(images/bg_03.jpg) repeat center 0px;
+
+		   }
+.titleP{				background:url(images/reg_02.gif) repeat-x center;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size:10px;
+				color:#929292;
+				background-color:transparent;
+				padding-top:19px;
+				padding-bottom:5px;
+				height:30px;
+				position:absolute;
+				top:-48px;
+				left:0px;
+				margin-top:0px;
+				
+				}
+
+#out{ background:url(images/reg_02.gif) repeat-x top;
+		height:30px;
+	}
+.titleP span{font-weight:bold;
+        color:#000000;
+		font-size:12px;
+		}
+#container{ position:relative;
+			margin-left:auto;
+            margin-right:auto;
+			width:930px;
+			background:url(images/bg_03.jpg) repeat center;
+			}
+#banner{margin-left:auto;
+          margin-right:auto;
+		  	
+		  }	  
+
+#content{margin-left:auto;
+          margin-right:auto;
+		  }
+.form1{margin-left:auto;
+		margin-right:auto;
+		}
+.tab{margin-left:auto;
+		margin-right:auto;
+		}
+#footer{margin-left:auto;
+          margin-right:auto;
+		  }
+
+#container{padding:0px;
+		   margin-top:5px;
+		   }
+#content{padding-top:10px;
+         padding-bottom:10px;
+          margin-top:15px;
+		  background-color:#ffffff;
+		  font:"Times New Roman", Times, serif,方正幼圆简体;
+		  font-size:12px;
+		  margin-bottom:0px;
+         }
+.form1{margin-bottom:0px;
+       margin-top:0px;
+	   }
+#footer{color:#000000;
+        text-align:center;
+		margin-top:50px;
+		border-top:1px #6C95D7 solid;
+		padding-top:15px;
+		padding-bottom:200px;
+		background-color:#ffffff;
+		}
+.tab{ border:0px;
+	 text-align:center;
+			  
+			  
+             }
+.form1 .tab td{border:0px;
+               vertical-align:middle;
+			   text-align:left;
+			   font-family:Arial, Helvetica, sans-serif,方正幼圆简体;
+			   font-size:12px;
+			   color:#929292;
+			   
+			   
+               }
+ input{border:1px #974619 solid;
+      background-color:#fbead8;
+	  font-family:"Times New Roman", Times, serif;
+	  margin:0px;
+	  padding:0px;
+	  height:20px;
+	  width:200px;
+	  }
+.logoin{background-image:url(images/logo_f_13.gif);
+    background-repeat:no-repeat;
+	height:24px;
+	border:0px;
+	width:56px;
+	}
+.register{background-image:url(images/registerf_15.gif);
+     background-repeat:no-repeat;
+	 height:24px;
+	 border:0px;
+	 width:56px;
+    }
+input{line-height:22px;}
+
+
+          		   

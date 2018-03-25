@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{margin:0px auto;
+           padding:0px;
+		   background-color:#FCFCFC;
+		   font-family:Arial, Helvetica, sans-serif;
+		   font-size:12px;
+		   text-align:center;
+		  	background:url(images/bg_03.jpg) repeat center 0px;
+
+		   }
+
+			
+			
+p{     			background:url(images/reg_02.gif) repeat-x center;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size:10px;
+				color:#929292;
+				background-color:transparent;
+				padding-top:20px;
+				padding-bottom:5px;
+				height:30px;
+				position:absolute;
+				top:-48px;
+				left:0px;
+				margin-top:0px;
+
+			     }
+#out{ background:url(images/reg_02.gif) repeat-x top;
+		height:30px;
+	}
+
+p span{ font-weight:bold;
+        color:#000000;
+		font-size:12px;
+		}
+#container{ position:relative;
+			margin-left:auto;
+            margin-right:auto;
+			width:930px;
+			background-color:#ffffff;
+			margin-bottom:0px;
+			padding:0px;
+			margin-top:5px;
+
+			}
+#picture{padding-right:465px;
+		 padding-top:20px;
+		}
+#picture2{padding-right:465px;
+			margin-right:-22px;
+		
+			}
+#picture3{padding-right:465px;
+		  margin:0px;
+		  padding-left:0px;
+		  text-align:left;
+			}
+#picture4{ float:right;
+			position:absolute;
+			top:88px;
+			right:150px;
+			margin:0px;
+			padding:0px;
+			
+			}
+#content{float:right;
+		position:absolute;
+		top:170px;
+		right:113px; 
+		margin:0px;
+		padding:0px;
+	}
+.a_form{margin:0px;
+		}
+input{
+	border:1px #974619 solid;
+	width:285px;
+	height:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:22px;
+
+		}
+#content .a_form input.three,.a_form input.four{border:0px;}
+#content .a_form input.three{background-image:url(images/adminpt1_r5_c4.gif);
+							background-repeat:no-repeat;
+								background-color:transparent;
+								width:75px;
+								height:33px;
+
+			}
+#content .a_form input.four{	background-image:url(images/adminpt1_r5_c7.gif);
+								background-repeat:no-repeat;
+								background-color:transparent;
+								width:75px;
+								height:33px;
+			}
+#ranking td span.one{
+	background-image:url(images/admin1_r1_c1.jpg);
+	position:absolute;
+	top:9px;
+	right:300px;
+	width:58px;
+	height:22px;
+
+					}
+#ranking td span.two{
+	background-image:url(images/admin1_r3_c1.jpg);
+	position:absolute;
+	top:40px;
+	right:300px;
+	width:58px;
+	height:22px;
+}
+#empty{margin-top:10px;
+		margin-left:auto;	
+		margin-right:auto;
+		margin-bottom:0px;
+		padding:0px;
+        background:url(images/bg_03.jpg) repeat center;
+		height:50px;
+		
+		}
+
+#footer{	margin-left:auto;
+            margin-right:auto;
+		  }
+
+#footer{color:#000000;
+        text-align:center;
+		margin-top:0px;
+		border-top:1px #6C95D7 solid;
+		padding-top:15px;
+		padding-bottom:200px;
+		background-color:#ffffff;
+		}

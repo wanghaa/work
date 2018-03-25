@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>磊元科技科技（用户汪册）</title>
+<script type='text/javascript' src='dwr/interface/utildwr.js'></script>    
+<script type='text/javascript' src='dwr/engine.js'></script>
+<script language="javascript" type="text/javascript" src="My97DatePicker/WdatePicker.js"></script>
+<link href="css2.css" rel="stylesheet" type="text/css" />
+<script>
+	var flag1=false;
+	var user_add="";
+	var pass_add="";
+	var myReg = /^[-_A-Za-z0-9]+@([_A-Za-z0-9]+\.)+[A-Za-z0-9]{2,3}$/;//邮箱
+	var pattern = /[A-Za-z][0-9]|[0-9][A-Za-z]/i;//数字字母组合
+	var postcode=/^[1-9][0-9]{5}$/;//邮编
+	
+	function register(){
+		//验证
+		
+		if(check(1,"username",document.form2.username.value))return;//用户名
+		if(check(100,"brithday",document.form2.brithday.value))return;//生日
+		if(check(4,"email",document.form2.email.value))return;//邮箱
+		if(check(100,"contact",document.form2.contact.value))return;//联系方式
+		if(check(100,"msn",document.form2.msn.value))return;//联系方式
+		document.form2.submit();
+	}
+	function check(type,name,value){
+		
+		var flag=false;
+		if(value!=""){
+			switch(type){
+				case 1:
+					//限制长度
+					if(value.length<2 || value.length>10){
+						flag=true;
+						break;
+					}
+					//查重
+					dwr.engine.setAsync(false);
+					utildwr.checkname(value,callback_checkname);
+					flag=flag1;
+					if(flag)user_add="此用户名已被注册";
+					break;
+				
+				case 2://密码
+					if(value.length<6 || value.length>9){
+						flag=true;break;
+					}
+					flag=!pattern.test(value);
+					break;
+				case 3://密码确认
+					if(document.getElementById("password").value!=value){
+						flag=true;
+						pass_add="两次密码不一致";
+					}
+					break;
+				case 4://邮箱
+					flag=!myReg.test(value);
+					break;
+				case 5://邮编
+					flag=!postcode.test(value);
+					break;		
+			}
+		}else{
+			flag=true;
+		}
+		var add="";
+		if(name=="username")add=user_add;
+		if(name=="password2")add=pass_add;
+		if(flag){
+			document.getElementById(name).focus();
+			document.getElementById("t_"+name).style.color="red";
+			document.getElementById("t_"+name).innerHTML=document.getElementById("t_"+name).innerHTML.replace(add,"")+add;
+			
+		}else{
+			document.getElementById("t_"+name).style.color="#8A8C8B";
+			document.getElementById("t_"+name).innerHTML=document.getElementById("t_"+name).innerHTML.replace(add,"");
+		}
+		
+		return flag;
+
+	}
+	function callback_checkname(data){
+		flag1=data;
+	}
+</script>
+<style>
+	.errorLabel(
+		color:red;
+	)
+</style>
+</head>
+
+<body>
+<div id="out"></div>
+
+<div id="container">
+	<p><span>您好，欢迎来到磊元科技！</span>请登录免费注册</p>
+	<div id="banner"><img src="images/new_banner_03.jpg"/></div>
+    	<div id="newuserreg"><img src="images/xin_yong_07.png" class="img1"/><div id="bing2"><a href="admin.html">返回●首页</a></div><div id="bing"><span>*</span>&nbsp;&nbsp;<b>必填项</b></div></div>
+        	
+            	<div id="content">
+                	<form name="form2" action="RegisterServlet" method="post" class="myform">
+                	<input  type="hidden" value="" name="usually" id="usually"/>
+                    	<table class="tab" cellspacing="4">
+                        	<tr><td><span>*</span>用户名：</td><td><table class="tab3"><tr><td><input type="text" id="username" name="username" value="" class="rad" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="t_username" style="color:#8a8c8b">使用2-10个英文字母、数字或中文，登录时使用。</span></td></tr></table></td></tr>
+                            <tr><td><span>*</span>性别：</td><td class="man">&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" checked name="mansex" value="男"/>&nbsp;&nbsp;男<input type="radio" name="mansex" value="女"/>&nbsp;&nbsp;女</td></tr>
+                            <tr><td><span>*</span>生日：</td><td><table  class="tab3"><tr><td><input type="text" id="brithday" name="brithday" id="brithday" value="" class="rad" readonly onclick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd'})"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="t_brithday" style="color:#8a8c8b">请按＂年＂＂月＂＂日＂格式填写，中间使用＂－＂符号分隔。</span></td>
+                            	</tr></table></td></tr>
+                            <tr><td><span>*</span>E-mail：</td><td><table  class="tab3"><tr><td><input type="text" id="email" name="email" value="" class="rad" />                                                	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;,<span id="t_email" style="color:#8a8c8b">请输入现有的E-Mail地址。如：123@123.com</span></td>
+
+                                </tr></table></td></tr>                          	
+                            <tr><td><span>*</span>联系电话：</td><td><table  class="tab3"><tr><td><input type="text" id="contact" name="contact" value="" class="rad"/>                                                            	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="t_contact" style="color:#8a8c8b">请输入手机或电话。电话格式如：010-546548</span></td>
+
+                            	</tr></table></td></tr>
+                            <tr><td>MSN：</td><td><table  class="tab3"><tr><td><input type="text" id="msn" name="msn" value="" class="rad"/>                                                                	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="t_msn" style="color:#8a8c8b">请输MSN号码</span></td>
+
+                                </tr></table></td></tr>
+                            <tr><td>权限设置：</td><td><table class="tab3"><tr><td>
+                            	<select id="limit" name="limit">
+                            		<option value="1">普通职工</option>
+                            		<option value="2">管理员</option>
+                            		
+                            	</select>
+                            </td></tr></table></tr>
+                        </table>
+     	            </form>
+               </div>
+       <div id="control"><form name="form1" action="#" method="post" class="myform2"><table class="tab2"><tr><td><input type="button" name="submit1" onclick="register()" class="one"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="reset1" value="" class="two" click="document.form1.reset()"/></td></tr></table></form></div>
+ 			<div id="empty"></div>
+ 			<div id="footer">Copyright © 2003-2011 Taobao.com 版权所有</div>
+				</div>
+</body>
+</html>
+
+
+                    	
+                	
+                

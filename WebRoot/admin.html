@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>瑞草生物科技（管理员登录）</title>
+<link href="css4.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+  	function check()
+  	{
+  		if(document.forms[0].user_name.value=="")
+  		{
+  			alert("请填写用户名");
+  			document.forms[0].user_name.focus();
+  			return;
+  		}
+  		
+  		if(document.forms[0].user_pass.value=="")
+  		{
+  			alert("请填写密码");
+  			document.forms[0].user_pass.focus();
+  			return;
+  		}
+  		document.logo_in.submit();
+  	}
+  	  	function test(){
+  		if (event.keyCode == 13){
+  			check();
+  		}
+  	}
+</script>
+</head>
+
+<body>
+<div id="out"></div>
+
+
+<div id="container">
+    <p><span>您好，欢迎来到磊元科技！</span></p>
+	<div id="picture"><img src="images/adminpt1_r1_c2.gif" class="" /></div>
+    <div id="picture2"><img src="images/adminpt1_r4_c2.gif"  class="" /></div>
+    <div id="picture3"><img src="images/adminpt1_r7_c1.jpg" class=""/></div>
+    <div id="picture4"><img src="images/adminpt1_r2_c5.gif" class="" /></div>
+	<div id="content">
+		<form name="logo_in" action="EmployessServlet" method="post" class="a_form">
+			<table id="ranking" cellspacing="6">
+				<tr>
+					<td><span class="one"></span>管理员</td>
+					<td colspan="2"><input onkeydown="test();" type="text" name="user_name" id="user_name" value="" /></td>
+				</tr>
+                 <tr>
+                 	<td><span class="two"></span>密&nbsp;&nbsp;&nbsp;&nbsp;码</td>
+                 	<td colspan="2"><input onkeydown="test();" type="password" name="user_pass" name="user_pass" value=""/>
+                 </tr>
+                 <tr>
+                 	<td>&nbsp;</td>
+                 	<td><input type="button" name="submit1" value="" onclick="check()" class="three"/></td>
+                 	<td><input type="button" name="button1" value="" class="four"/></td>
+                 </tr>
+             </table>
+         </form>
+    </div>
+    <div id="empty"></div>
+  <div id="footer">Copyright © 2003-2011 Taobao.com 版权所有</div>
+</div>
+</body>
+</html>

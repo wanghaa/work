@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+ 	.round{background:url(images/images/left-top.gif) no-repeat left top;
+			width:930px;
+			}
+	.round h4{background:url(images/images/right-top.gif) no-repeat right top;
+	         padding:20px 50px;
+			 margin:0px;
+			 font-size:12px;
+			 font-family:Arial, Helvetica, sans-serif;
+			 
+
+}
+	.round .tabb{background:url(images/images/right.gif) repeat-y right top;
+					padding:25px 10px 25px 6px;
+					margin:-2em 0 0;
+					
+
+				}
+	.round .bot{ background:url(images/images/left-bottom.gif) no-repeat left bottom;}
+	.bot p{background:url(images/images/right-bottom.gif) no-repeat right bottom;
+				padding:0 0 10px;
+				display:block;
+				margin:-2em 0 0;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size:10px;
+				color:#929292;
+				text-align:left;
+				height:30px;
+				}

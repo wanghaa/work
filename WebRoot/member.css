@@ -1,0 +1,451 @@
+@charset "utf-8";
+/* CSS Document */
+body, td, input, textarea, select, button {
+    color: #444444;
+    font: 12px/1.6em Verdana,Helvetica,Arial,sans-serif;
+}
+body, ul, li, dl, dd, p, h1, h2, h3, h4, h5, h6, form, fieldset {
+    margin: 0;
+    padding: 0;
+}
+em, cite, strong, th {
+    font-style: normal;
+    text-align: left;
+}
+ul li {
+    list-style: none outside none;
+}
+table {
+    border-collapse: collapse;
+    empty-cells: show;
+}
+th {
+    font-weight: 400;
+}
+hr {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 solid #E6E7E1;
+    clear: both;
+    margin: 1em 0;
+}
+em, cite, strong, th {
+    font-style: normal;
+    text-align: left;
+}
+.dashline {
+    border-bottom-width: 1px;
+    border-style: dashed;
+    height: 0;
+}
+.wrap {
+    text-align: left;
+    position: relative;
+
+}
+
+.content {
+    padding: 20px 0;
+}
+.itemtitle {
+    line-height: 23px;
+   
+    overflow: hidden;
+}
+.itemtitle h1 {
+    color: #CC9900;
+    float: left;
+    margin: 0 20px 0 0;
+}
+.itemtitle ul {
+    float: left;
+}
+.itemtitle li {
+    float: left;
+    margin-right: 5px;
+}
+
+.content h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.formtable {
+    width: 100%;
+}
+
+.formtable th {
+    padding: 5px 2px;
+    width: 100px;
+}
+.formtable td {
+    padding: 5px 2px;
+}
+.blocktitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.lightlink, .lightlink a {
+    color: #CC9900;
+}
+.closenode {
+   /* background: url("images/dashline.gif") repeat-x scroll 0 10px transparent;*/
+}
+.c_header {
+   
+    overflow: hidden;
+}
+.c_header h2, .c_header h3 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    padding-right: 15px;
+}
+.c_header h3 {
+   /* background: url("images/arrow_down_big.gif") no-repeat scroll 100% 5px #FFFFFF;*/
+    color: #CC9900;
+}
+.closenode h3 {
+    /*background-image: url("images/arrow_right_big.gif");*/
+}
+.c_header_action {
+    float: right;
+}
+.c_header .c_header_ctrlbtn {
+    display: none;
+}
+.closenode .c_header_ctrlbtn {
+    background-color: #FFFFFF;
+    color: #666666;
+    cursor: pointer;
+    display: block;
+}
+.threadtype {
+    border-top: 3px solid #E6E7E1;
+    line-height: 2em;
+    padding: 8px 6px;
+}
+.threadtype a, .threadtype strong {
+    border-right: 1px solid #E6E7E1;
+    margin-right: 6px;
+    padding-right: 6px;
+    white-space: nowrap;
+    color: #000000;
+    text-decoration: none;
+}
+.threadtype strong {
+    color: #0099CC;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.selectedA{
+	color:#0099cc;
+	font-weight:700;
+	white-space: nowrap;
+}
+#threadlist table{
+	width:100%;
+	
+}
+#threadlist table td{
+	height:30px;
+	text-align:center;
+}
+
+.td1{
+	width:5%;
+}
+.td2{
+	width:15%;
+}
+.td3{
+	width:10%;
+}
+.td4{
+	width:20%;
+}
+.td5{
+	width:10%;
+}
+.td6{
+	width:10%;
+}
+.td7{
+	width:20%;
+}
+.datalist th, .datalist td {
+    border: 1px solid #E6E7E1;
+
+    border-width: 1px 0;
+}
+#oneline td{
+	border:none;
+}
+.datalist .datatable, .datalist .datatable th, .datalist .datatable td {
+    border-width: 1px 0;
+}
+.thead{
+	font-weight:700;
+}
+#fenye{
+	float:right;
+	height:30px;
+	margin:5px 0 0 0 ;
+	display:block;
+}
+#tag{
+	margin:3px 15px 0 15px;
+}
+
+#fenye a {
+    border: 1px solid;
+    float: left;
+    height: 20px;
+    line-height: 22px;
+    margin-right: 2px;
+    overflow: hidden;
+    padding: 0 6px;
+    border-color: #cccccc;
+    color: #0099CC;
+    text-decoration: none;
+}
+#dialog {
+position:absolute;
+width:200px;
+height:200px;
+background:#F00;
+display: none;
+z-index: 5;
+}
+.titleP{		   
+				background:url(images/reg_02.gif) repeat-x center;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size:10px;
+				color:#929292;
+				background-color:transparent;
+				padding-top:15px;
+				padding-bottom:5px;
+				height:30px;
+				position:absolute;
+				top:-41px;
+				left:0px;
+				margin-top:0px;
+}
+.titleP span{font-weight:bold;
+        color:#000000;
+		font-size:12px;}
+#out{ background:url(images/reg_02.gif) repeat-x top;
+		height:30px;
+	}
+#footer{color:#000000;
+        text-align:center;
+		margin-top:50px;
+		border-top:1px #6C95D7 solid;
+		padding-top:15px;
+		padding-bottom:200px;
+		background-color:#ffffff;
+		}
+
+#changpass{
+	
+}
+#picture {
+    text-align: left;
+    width:48%;
+}	
+.one {
+    background: url("images/tag1.jpg");
+    background-repeat: no-repeat;
+    width:120px;
+	font-size:12px;
+	height:22px;
+
+}
+.one div{
+	margin:1px 0 0 10px;
+	line-height:200%;
+}
+.orderList{
+	background-color:#fff;
+	cursor:pointer;
+}
+.orderList:hover{
+	background-color:#f0f0f0;
+}
+.btn {
+    background: url("images/i2.png") repeat scroll 0 -35px #DDDDDD;
+    border: 0 none;
+    cursor: pointer;
+    height: 20px;
+    width:50px;
+    padding: 0;
+
+}
+#hidden_addmessage{
+	display:none;
+}
+.LC li {
+    line-height: 23px;
+    margin:0 10px 0 10px;
+}
+.LC li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px dashed #D8D8D8;
+
+    padding: 12px 0 10px;
+    width: 100%;
+}
+.LC li {
+    padding: 12px 0 10px;
+}
+.LC li {
+    line-height: 23px;
+}
+.userPic {
+    float: left;
+    padding: 0 0 4px 12px;
+    width: auto;
+}
+.userPic {
+    padding: 0 0 4px 12px;
+    position: relative;
+}
+.msgBox {
+    overflow: hidden;
+    padding-right: 12px;
+    word-wrap: break-word;
+
+}
+.userName {
+    color: #999999;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    height: 23px;
+    line-height: 23px;
+}
+.LC .msgBox strong {
+    padding-right: 5px;
+    text-align: left;
+}
+.userName strong, .msgCnt strong {
+    font-weight: normal;
+}
+.LC a {
+    color: #2B4A78;
+    text-decoration: none;
+}
+
+.pubInfo {
+    margin-right: 5px;
+}
+.LC .pubInfo {
+    clear: both;
+    color: #999999;
+    height: 19px;
+}
+.pubInfo .left a {
+    color: #999999;
+}
+.LC .funBox, .PL .funBox {
+    display: inline-block;
+    float: right;
+    height: 23px;
+}
+.LC .funBox a {
+    color: #889DB6;
+    float: left;
+}
+.LC .funBox span {
+    color: #DBDBDB;
+    float: left;
+    margin: 0 8px 0 7px;
+}
+.LC .funBox span {
+    margin: 0 3px 0 2px;
+}
+#talkBox {
+   margin-top:5px;
+
+}
+#talkBox .funBox, #talkBox .cntBox {
+    margin: 0 auto;
+    width: 100%;
+
+}
+#talkBox .funBox{
+	text-align:right;
+	margin-right:15px;
+
+}
+#talkBox .cntBox {
+	text-align:right;
+    height: 85px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+   margin-left:10px;
+   padding-right:30px;
+   margin-right:10px;
+}
+#talkBox .cntBox textarea {
+    margin: 4px;
+    width: 97%;
+}
+.txtShadow {
+    -moz-border-radius: 6px 6px 6px 6px;
+    border: 1px solid #D0D0D0;
+    font-family: Tahoma,Arial;
+    font-size: 14px;
+    height: 66px;
+    line-height: 21px;
+    overflow-y: auto;
+    padding: 3px 5px;
+    width: 98%;
+    word-wrap: break-word;
+}
+.findd{
+		width:50px;
+		background:url(images/but_01.gif) no-repeat center 0;
+		border:none;
+		background-color:transparent;
+		height:25px;
+		}
+.focus{
+	    -moz-border-radius: 6px 6px 6px 6px;
+    border: 1px solid #7BD6F6;
+    font-family: Tahoma,Arial;
+    font-size: 14px;
+    height: 66px;
+    line-height: 21px;
+    overflow-y: auto;
+    padding: 3px 5px;
+    width: 98%;
+    word-wrap: break-word;
+}	
+#container2 {
+    background: url("images/top_pt.gif") no-repeat scroll 0 0 #EFEFEF;
+    padding-top: 1px;
+    text-align: center;
+    width: 400px;
+}
+#say {
+    margin-top: 15px;
+}
+#b_pttt {
+    background: url("images/bottom_pt.gif") no-repeat scroll left bottom transparent;
+    height: 72px;
+    margin-top: 5px;
+}
+#acti_b .su2 {
+    background: url("images/but_01.gif") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 25px;
+    width: 50px;
+}
+.in_con {
+    font-family: "Times New Roman",Times,serif;
+    font-size: 12px;
+    vertical-align: top;
+}

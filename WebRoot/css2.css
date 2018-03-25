@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{margin:0px auto;
+           padding:0px;
+		   background-color:#fcfcfc;
+		   font-family:Arial, Helvetica, sans-serif;
+		   font-size:12px;
+		   text-align:center;
+		   background:url(images/bg_03.jpg) repeat center 0px;
+
+		   }
+p{		  		background:url(images/reg_02.gif) repeat-x center;
+				font-family:Arial, Helvetica, sans-serif;
+                font-size:10px;
+				color:#929292;
+				background-color:transparent;
+				padding-top:22px;
+				padding-bottom:5px;
+				height:30px;
+				position:absolute;
+				top:-49px;
+				left:0px;
+				margin-top:0px;
+			     }
+#out{ background:url(images/reg_02.gif) repeat-x top;
+		height:30px;
+	}
+
+
+
+p span{font-weight:bold;
+        color:#000000;
+		font-size:12px;
+		}
+/*#container #newuserreg span.bing{ margin-left:750px;
+								vertical-align:top;
+			
+
+			}*/
+/*#container #newuserreg span.bing span{ color:#FF1F00;}*/
+
+#container #newuserreg #bing{position: absolute;
+								top:102px;
+								left:860px;
+								}
+#container #newuserreg #bing2{position: absolute;
+top:104px;
+left:150px;
+text-decoration:none;
+text-weight:600;
+}
+#container #newuserreg #bing2 a{
+text-decoration:none;
+font-weight:600;
+color:#000;
+}
+#container #newuserreg #bing span{color:#ff1f00;
+								 }										
+#container{ position:relative;
+			margin-left:auto;
+            margin-right:auto;
+			width:930px;
+			background-color:#ffffff;
+			margin-top:5px;
+			margin-bottom:0px;
+			
+			}
+#banner{margin-left:auto;
+          margin-right:auto;
+		  margin-top:0px;
+		  margin-bottom:0px;
+		  	
+		  }	
+#newuserreg{margin-left:auto;
+ 			margin-right:auto;
+			text-align:left;
+			background:url(images/nav_03.png) repeat-x;
+			border:1px #E7E7E7 solid;
+
+			}
+
+#content{margin-left:auto;
+          margin-right:auto;
+		  margin-top:4px;
+		  }
+#control{margin-left:auto;
+		margin-right:auto;
+		}
+#footer{margin-left:auto;
+          margin-right:auto;
+		  }
+#empty{background:url(images/bg_03.jpg) repeat center;
+		height:50px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:10px;
+		margin-bottom:0px;
+		padding:0px;
+		}
+#footer{color:#000000;
+        text-align:center;
+		margin-top:0px;
+		border-top:1px #6C95D7 solid;
+		padding-top:15px;
+		padding-bottom:200px;
+		background-color:#ffffff;
+		}
+#newuserreg{margin-top:4px;
+            margin-bottom:opx;
+			height:26px;
+			}
+#control{margin-top:15px;
+ 		margin-bottom:0px;
+
+		
+		}
+.img1{margin-left:10px;
+	  margin-top:2px;
+ 	padding:0px;
+	}
+.myform{margin-left:auto;
+		margin-right:auto;
+		}
+.myform2{margin-left:auto;
+   		margin-right:auto;
+		} 
+.tab{   margin-left:auto;
+		margin-right:auto;
+		}
+.myform {margin:0px;
+			
+				}
+.myform .tab{border:1px #e7e7e7 solid;
+             width:930px;
+			 background-color:#ffffff;
+              }
+             
+            
+.myform .tab .man{color:#8a8c8b;}
+.myform .tab td{border:1px #e7e7e7 solid;
+				height:44px;
+				text-align:left;
+				 padding-left:10px;
+                }
+.myform .tab td span{color:#ff1f00;
+ 					 margin:0px 5px 0px 0px;
+					 line-height:10px;
+					}
+input{
+	  font-family:"Times New Roman", Times, serif;
+	  margin:0px;
+	  padding:0px;
+	  height:20px;
+	  vertical-align:middle;
+	  }
+input.rad{border:1px #e7e7e7 solid;
+				  line-height:22px;
+}	
+input.postadress{ width:400px;
+                  border:1px #e7e7e7 solid;
+				  line-height:22px;
+				  }
+.one{ background:url(images/tijiao_15.png) no-repeat;
+	height:24px;
+	width:84px;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	}
+.two{background:url(images/chongzhi_17.png) no-repeat;
+	margin:0px;
+	padding:0px;
+	height:24px;
+	width:84px;
+	border:0px;
+
+		}
+.myform2 .tab2{text-align:center;
+				width:930px;
+				border:0px;
+				}
+.myform2 .tab2 td{  text-align:center;
+         			vertical-align:middle;
+		 			height:26px;
+		 }
+.myform .tab3 td{color:#8a8c8b;
+				 border:0px;
+				}
+
